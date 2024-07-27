@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+}
+
+body {
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.card {
+    background-color: #141414;
+    width: 350px;
+    height: 500px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.card-image img {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin-top: 50px;
+    margin-left: 135px
+}
+
+.card-content {
+    padding: 10px;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #fff;
+}
+
+.card-title-1 {
+    color: yellowgreen;
+    font-size: 12px;
+}
+
+.card-description {
+    margin-top: 20px;
+    font-size: 10px;
+    color: #fff;
+}
+
+.card-btn {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 50px;
+
+}
+
+.card-btn button {
+    display: block;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    width: 250px;
+    height: 40px;
+    background-color: #1f1f1f;
+    color: #fff;
+    border: 1px solid #000;
+    cursor:pointer;
+    
+
+
+}
+
+.card-btn button:nth-child(1) {
+    background-color: yellowgreen;
+    color: #000;
+}
+
+/* Desktop and larger screens */
+@media (max-width: 1440px) {
+    body {
+        justify-content: center;
+    }
+
+    .card {
+        width: 300px;
+        height: 450px;
+    }
+
+    .card-image img {
+        width: 50px;
+        height: 50px;
+        margin-top: 40px;
+    }
+
+    .card-title {
+        font-size: 18px;
+    }
+
+    .card-title-1 {
+        font-size: 14px;
+    }
+
+    .card-description {
+        font-size: 12px;
+    }
+
+    .card-btn button {
+        width: 220px;
+        padding: 8px;
+        font-size: 14px;
+    }
+}
+
+/*mobile*/
+@media (max-width: 320px) {
+    .card {
+        width: 90%;
+        height: auto;
+    }
+
+    .card-image img {
+        width: 50px;
+        height: 50px;
+        margin-top: 30px;
+    }
+
+    .card-content {
+        padding: 15px;
+    }
+
+    .card-title {
+        font-size: 18px;
+    }
+
+    .card-title-1 {
+        font-size: 14px;
+    }
+
+    .card-description {
+        font-size: 12px;
+    }
+
+    .card-btn {
+        margin: 0 10px;
+    }
+
+    .card-btn button {
+        width: 100%;
+        padding: 5px;
+        font-size: 14px;
+    }
+}
